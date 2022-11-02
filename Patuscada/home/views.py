@@ -7,19 +7,21 @@ from django.contrib import messages
 from django.shortcuts import redirect, render
 from django.urls import reverse
 
-from .models import onde_ficar
+from .models import OndeFicar, Apoio
 
 # Create your views here.
 
 def home(request):
     if request.method == 'GET':
-        #administração User:admin Senha:admin
-        onde = onde_ficar.objects.all()
+        onde = OndeFicar.objects.all()
+        apoios = Apoio.objects.all()
         context ={
             'onde':onde,
+            'apoios' : apoios
         }
         return render(request, 'home/index.html', context)
-    if request.method == 'POST':
+    
+    elif request.method == 'POST':
         name = request.POST.get('name')
         email = request.POST.get('email')
         phone = request.POST.get('phone')
