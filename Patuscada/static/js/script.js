@@ -45,10 +45,17 @@ function initMap() {
         })
         );
 
+    /** Esconde o menu após o click */
+    document.querySelectorAll('.nav-item')
+        .forEach((el) => el.addEventListener("click", function (e) {
+            document.getElementById("navbarNav").classList.remove("show")
+        })
+        );
+
 }
 window.initMap = initMap;
 
-function removeActive(){
+function removeActive() {
     var elems = document.querySelectorAll(".active");
     [].forEach.call(elems, function (el) {
         el.classList.remove("active");
@@ -72,3 +79,4 @@ function setRouteInformations(distance, duration) {
 }
 
 /* FIM DO MAPS */
+
