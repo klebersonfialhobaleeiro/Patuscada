@@ -1,3 +1,5 @@
+
+
 .bg-principal, .navbar-toggler, .navbar-nav   {
   background-color: #ffb600 !important;
 }
@@ -7,29 +9,42 @@
 
 
 /* navbar */
-@media (min-width:992px) {
+@media (min-width:770px) {
   .navbar-brand{
       transform: translateY(20%);
   }
 }
-.navbar-top-fixed {
+
+#menu-topo {
   height: 110px;
 }
 .nav-principal {
-  margin-top: -40px;
+  margin-top: 40px;
 }
 
 .nav-principal li.active{
   color: #fff
 }
 
-#navbarCollapse{
-  flex-direction: column;
+.nav-principal li.nav-item a.nav-link{
+  padding: 10px;
 }
+
+
+.navbar-nav .nav-link.active{
+  color: #fff !important;
+}
+
+#li-comprar{
+  height: 60px;
+}
+
 .ul, #btn-comprar{
   align-self: flex-end;
   height: 10px;
 }
+
+
 
 #list-cidades{
   /*background-color: green;*/

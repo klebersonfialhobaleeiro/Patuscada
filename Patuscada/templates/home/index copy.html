@@ -1,0 +1,398 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  {% comment %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Site oficial da Patuscada Fest de Licínio de Almeida/BA" />
+  {% endcomment %}
+  <title>Patuscada Fest | + que 1 festa. Uma experiência!</title>
+  <link rel="shortcut icon" type="imagem/x-icon" href="{% static '/imgs/logo_sombra.png' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/navbar-top-fixed.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md fixed-top bg-principal navbar-top-fixed shadow">
+    <div class="container">
+      <a class="navbar-brand" id="logo_sombra" href="#">
+        <img src="{% static 'imgs/logo_sombra.png' %}" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse align-bottom" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0 nav-principal">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">.home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">.sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#onde">.onde ficar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#parceiros">.parceiros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">.contato</a>
+          </li>
+          <li class="nav-item" id="li-comprar">
+            <a class="btn btn-default" href="https://ingressos.meep.com.br/patuscada-fest" target="_blank" id="btn-comprar">
+              <img src="{% static 'imgs/bt_comprar.png' %}" alt="" />
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HOME -->
+  <div class="container body-main" id="home">
+    <div class="row">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'imgs/banner1.jpg' %}" class="d-block w-100" alt="{% static 'imgs/caixa_dir.png' %}" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- SOBRE -->
+    <div class="row mt-3 space" id="sobre">
+      <div class="col-md-5 col-12 text-center align-middle">
+        <br><br><br>
+        <img src="{% static 'imgs/logo_redonda.png' %}" alt="" />
+      </div>
+      <div class="col-md-7 col-12 mt-3">
+        <div class="">
+          <h3 class="txt-roxo">
+            SOBRE <span class="txt-amarelo"> A PATUSCADA </span>
+          </h3>
+        </div>
+        <div class="row" id="txt_sobre">
+          <p>
+            Em Licínio de Almeida - BA no dia 10/12/2022 as 22h acontece a
+            festa que deixou um gostinho de quero mais após a sua primeira
+            edição.
+
+            <br>
+            Com muita organização, bom atendimento, espaço acolhedor, boa
+            bebida e gente animada e bonita, a primeira edição foi mais que
+            uma festa. Foi uma experiência incrível para todos que
+            participaram.
+            <br>
+            Agora em segunda edição, "<strong><em>Abre que é sucesso, maninhooo!!!!!</em></strong>". Além de um <em>open
+              bar</em> de qualidade, teremos eles que
+            por onde passam é sinal de alegria e muita curtição: a banda Trio
+            da Huanna!
+            <br>
+            E para deixar a festa ainda mais completa, teremos o fenômeno dos
+            paredões, a banda A Tarraxada, e a presença musical vibrante e
+            alto astral de Thamires Freitas!
+          </p>
+
+          <div>
+            <table class="table-responsive">
+              <tr>
+                <td><span class="txt-roxo">Atrações</span></td>
+                <td><span class="txt-amarelo">Data e local</span></td>
+                <td><span class="txt-roxo">Open bar</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="text-dark">
+                    <li>Trio da Huanna</li>
+                    <li>A Tarraxada</li>
+                    <li>Thamires Freitas</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="text-dark">
+                    <li>Cidade: Licínio de Almeida - Bahia</li>
+                    <li>Data: 10 de Dezembro de 2022</li>
+                    <li>Horário: 22h</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="text-dark">
+                    <li> Cerveja com e sem Álcool</li>
+                    <li> Vodka </li>
+                    <li> Água </li>
+                    <li> Refrigerante </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+
+
+          <p>
+
+          </p>
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMO CHEGAR -->
+    <div class="row mt-5">
+      <h3 class="txt-roxo">
+        COMO <span class="txt-amarelo"> CHEGAR? </span>
+      </h3>
+      <div class="row mx-auto">
+        <div class="col-md-8 col-sm-7 mb-auto">
+          <div id="map"> </div>
+          <div class="row mt-1">
+            <div class="col-6">
+              <div class="alert alert-warning">
+                <i class="fa-solid fa-clock"> &nbsp; </i>
+                <span id="durationRouteMap">--</span>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="alert alert-warning">
+                <i class="fa-solid fa-location-dot"> &nbsp; </i>
+                <span id="distanceRouteMap">--</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 col-sm-5">
+          <ul class="nav flex-column nav-pills nav-fill" id="list-cidades">
+            <li class="nav-item">
+              <button class="nav-link cidade text-start" value="-14.492204528258075, -42.23308313054073"><i
+                  class="fa-solid fa-location-dot"> &nbsp; </i>Caculé</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link cidade text-start" value="-14.063332120769374, -42.48456704483076"><i
+                  class="fa-solid fa-location-dot"> &nbsp; </i>Caetité</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link cidade text-start" value="-14.245760881963903, -42.77965294939332"><i
+                  class="fa-solid fa-location-dot"> &nbsp; </i>Guanambi</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link cidade text-start" value="-14.284191994544445, -42.25943315185214"><i
+                  class="fa-solid fa-location-dot"> &nbsp; </i>Ibiassucê</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link cidade text-start" value="-14.793861462098562, -42.29455135481432"><i
+                  class="fa-solid fa-location-dot"> &nbsp; </i>Irundiara</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link cidade text-start" value="-14.836345857145943, -42.431193810104844"><i
+                  class="fa-solid fa-location-dot"> &nbsp; </i>Jacaraci</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link cidade text-start" value="-15.012500372729402, -42.377292139337804"><i
+                  class="fa-solid fa-location-dot"> &nbsp; </i>Mortugaba</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link cidade text-start" value="-14.497270121142604, -42.69051283140531"><i
+                  class="fa-solid fa-location-dot"> &nbsp; </i>Pindaí</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link cidade text-start" value="-14.762316944679238, -42.64986214167192"><i
+                  class="fa-solid fa-location-dot"> &nbsp; </i>Urandi</button>
+            </li>
+            <li class="nav-item mt-2">
+              <div class="form-floating">
+                <input type="text" name="local" class="form-control" id="autocomplete" />
+                <label for="autocomplete"> <i class="fa-solid fa-location-dot"> &nbsp; </i> Não encontrou? Digte aqui a
+                  sua cidade.</label>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ONDE FICAR -->
+    <div class="row mt-5" id="onde">
+      <h3 class="txt-roxo">
+        ONDE <span class="txt-amarelo"> FICAR? </span>
+      </h3>
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="bg-principal">
+              <tr>
+                <td>Descrição</td>
+                <td>Contato</td>
+                <td>Falar com</td>
+              </tr>
+            </thead>
+            <tbody>
+              {% if onde %} {% for o in onde %}
+              <tr>
+                <td>{{ o.descricao }}</td>
+                <td>{{ o.contato }}</td>
+                <td>{{ o.falarCom }}</td>
+              </tr>
+              {% endfor %} {% endif %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    {% if apoios %}
+    <!-- APOIADORES -->
+    <div class="row mt-5" id="parceiros">
+      <h3 class="txt-roxo">
+        APOIAM <span class="txt-amarelo"> A PATUSCADA </span>
+      </h3>
+      <div class="row">
+        {% for apoio in apoios %}
+        <div class="col-4 mb-4">
+          <div class="card border-left-warning shadow py-2">
+            <div class="d-flex justify-content-center">
+              <img class="img-apoio" src="media/{{ apoio.logomarca }}" alt="{{apoio.nome}}" />
+
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- CONTATO -->
+    <div class="row mt-5" id="contato">
+      <h3 class="txt-roxo">
+        FALE COM <span class="txt-amarelo"> A PATUSCADA </span>
+      </h3>
+      {% if messages %}
+      {% for m in messages%}
+      <div class="alert alert-{{m.tags}} alert-dismissible fade show text-center" role="alert">
+        <strong>{{m}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor%}
+      {% endif %}
+
+      <div class="row">
+        <div class="col-md-8 col-sm-7 mb-auto">
+          <form class="row g-3" action="{% url 'home' %}" method="POST">
+            {% csrf_token %}
+            <div class="col-md-6 form-floating">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" required />
+              <label for="floatingInput">Nome*</label>
+            </div>
+            <div class="col-md-6 form-floating">
+              <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com"
+                required />
+              <label for="floatingInput">Email*</label>
+            </div>
+            <div class="col-md-6 form-floating">
+              <input type="tel" name="phone" class="form-control" id="tel" placeholder="(77) 99191-9191" />
+              <label for="floatingInput">Telefone</label>
+            </div>
+            <div class="col-md-6 form-floating">
+              <input type="text" name="instagram" class="form-control" id="instagram" placeholder="Seu instagram" />
+              <label for="floatingInput">Instagram</label>
+            </div>
+            <div class="col-md-12 form-floating">
+              <textarea type="text" name="message" class="form-control" placeholder="Sua mensagem"
+                id="floatingTextarea2" style="height: 150px" required></textarea>
+              <label for="floatingTextarea2">Sua mensagem*</label>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-default">
+                <img src="{% static 'imgs/btn_enviar.png' %}" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-4 col-sm-5 text-center">
+          <div class="p-2 bd-highlight">
+            <h5 class="txt-amarelo">
+              <i class="fa-solid fa-location-dot"> </i>&nbsp;&nbsp;Endereço:<br>
+            </h5>
+            &nbsp;&nbsp; Praça Sônia Damasceno, S/N. <br>
+            &nbsp;&nbsp; Licínio de Almeida, BA
+          </div>
+          <div class="p-2 bd-highlight">
+            <h5 class="txt-roxo">
+              <i class="fa-solid fa-phone"></i> &nbsp;&nbsp; Telefone:
+            </h5>
+            &nbsp;&nbsp; +55 (77) 9 9194-3653
+          </div>
+          <div class="p-2 bd-highlight">
+            <h5 class="txt-amarelo">
+              <i class="fa-solid fa-envelope"></i>
+              &nbsp;&nbsp; Email:
+            </h5>
+            &nbsp;&nbsp; patuscadafestlic@gmail.com
+          </div>
+
+          <div class="p-2 bd-highlight">
+            <h5 class="txt-roxo">
+              <i class="fa fa-instagram"></i>&nbsp;&nbsp; Instagram:
+            </h5>
+            &nbsp;&nbsp; @patuscadafest
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5">
+        <div class="row">
+          <img src="{% static 'imgs/bg_footer.png' %}" alt="" />
+        </div>
+    </footer>
+  </div>
+
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script type="module" src="{% static 'js/Map.js' %}"></script>
+  <script type="module" src="{% static 'js/script.js' %}"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsEgIJoShrSPCaiBYbMFLgYb7knyBaWaQ&libraries=places&callback=initMap&v=weekly"
+    defer></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHR7N3LCT5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GHR7N3LCT5');
+  </script>
+
+</body>
+
+</html>
